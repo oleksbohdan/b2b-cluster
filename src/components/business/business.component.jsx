@@ -12,8 +12,7 @@ const Business = ({content, content1}) => (
                 {content1}
             </div>
             <Registration />
-            
-        </div>
+             </div>
         <div className="ssexamp"> 
         </div>
     </div>
