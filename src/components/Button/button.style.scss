@@ -1,0 +1,25 @@
+.ssfirstbtn {
+    margin-top: 50px;
+    width: 230px;
+    height: 59px;
+    border-radius: 15px;
+    border: 2px solid #3d1659;
+    color:#3d1659;
+}
+.ssbtn {
+    margin-left: 10%;
+    :hover{
+        background-color: #3d1659;
+        color: white;
+        cursor: pointer;
+    }
+}
+.sstextbtn {
+    font-family: FuturaPt-Bold;
+    font-size: 18px;
+    
+}
+@font-face {
+    font-family: 'FuturaPT-Bold';
+    src: url('/b2b-cluster/src/assets/fonts/FuturaPT-Bold.eot');
+}

@@ -1,0 +1,34 @@
+.sscontent {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+}
+.sscontent1 {
+    margin-left: 10%;
+    width: 50%;
+    color: #3d1659;
+    font-family: FuturaPt-Bold;
+    font-size: 19px;
+}
+.sstext {
+    padding-top: 60px;
+    width: 80%;
+    font-weight: bolder;
+}
+.sstext1 {
+    width: 80%;
+    padding-top: 30px;
+
+}
+.ssexamp {
+    background-image: url('../../assets/example-28.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50%;
+    margin-right: 10%;
+    height: 900px;
+}
+@font-face {
+    font-family: 'FuturaPT-Bold';
+    src: url('/b2b-cluster/src/assets/fonts/FuturaPT-Bold.eot');
+}
