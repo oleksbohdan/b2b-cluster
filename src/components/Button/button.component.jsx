@@ -1,5 +1,6 @@
 import React from "react";
 import './button.style.scss';
+import Textbtn from "./btntext";
 
 class Registration extends React.Component {
     render() {
@@ -8,7 +9,7 @@ class Registration extends React.Component {
                 <button
                     className="ssfirstbtn"
                 >
-                <span className="sstextbtn">Зареєструватися</span>
+                <span className="sstextbtn"><Textbtn text2='Зареєструватися' /> </span>
                 </button>
             </form>
         )
