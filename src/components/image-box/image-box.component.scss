@@ -1,0 +1,13 @@
+.bo-image-box{
+  min-width: 12.5%;
+  height: 150px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+
+  .bo-box-inner-image{
+    max-width: 120px;
+  }
+}
