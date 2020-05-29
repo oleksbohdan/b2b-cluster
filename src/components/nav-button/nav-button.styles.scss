@@ -1,0 +1,18 @@
+.bo-nav-button{
+  display: block;
+  width: auto;
+  text-align: center;
+  line-height: 65px;
+  text-decoration: none;
+  color: rebeccapurple;
+  transition: 400ms ease all;
+  padding: 0 5px;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+}
+
+.bo-nav-button:hover{
+  color: rgba(102, 51, 153, 0.6);
+  border-bottom: 2px double rebeccapurple;
+  letter-spacing: 0.03em;
+}

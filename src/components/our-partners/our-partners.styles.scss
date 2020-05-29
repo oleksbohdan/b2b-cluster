@@ -1,0 +1,20 @@
+.bo-partners-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .bo-partners-title{
+    font-weight: normal;
+    color: rebeccapurple;
+    margin: 30px 0;
+  }
+
+  .bo-partners-images-container{
+    justify-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
