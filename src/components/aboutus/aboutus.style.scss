@@ -1,0 +1,44 @@
+.ssaboutus {
+    margin-left: 10%;
+    background-image: url('../../assets/example-12.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50%;
+    margin-right: 5%;
+    height: 490px;
+}
+.sscontentabout {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+.sstext3 {
+    width: 50%;
+}
+.ssaboutIT {
+    float: left;
+    width: 80%;
+    color:#3d1659;
+    font-family: FuturaPt-Bold;
+    font-size: 20px;
+}
+.ssspan {
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: FuturaPt-Bold;
+    font-weight: bolder;
+    padding-bottom: 50px;
+}
+.animation {
+    display: flex;
+
+}
+@media screen and (max-width: 800px) {
+    .sscontentabout {display: block;}
+    .ssaboutus {width: 80%;}
+    .sstext3{width: 90%;}
+    .ssaboutIT{
+        width: 100%;
+        text-align: center;
+    }
+}
