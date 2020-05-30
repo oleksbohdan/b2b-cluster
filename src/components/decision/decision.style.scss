@@ -1,0 +1,154 @@
+.ssdec {
+    color:#3d1659;
+    font-family: FuturaPt-Bold;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+}
+.ssdec1 {
+    color:#3d1659;
+    font-family: FuturaPt-Bold;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    width: 60%;
+    margin-left: 20%;
+}
+.sstop {
+    display: flex;
+    padding-top: 50px;
+}
+.sscenter {
+    display: flex;
+}
+.ssbottom {
+    display: flex;
+}
+.ssblock1 {
+    border: 2px solid #3d1659;
+    width: 33.3%;
+    height: 300px;
+    transition-duration: 250ms;
+    margin:30px;
+    background-color: #f8fbff;
+}
+div.ssblock1:focus {
+    transform: scale(1.5) translate(55%);
+    outline: none;
+   padding-right: 33%;
+}
+.ssblock2 {
+    border: 2px solid #3d1659;
+    width: 33.3%;
+    height: 300px;
+    transition-duration: 250ms;
+    margin:30px;
+    background-color: #f8fbff;
+}
+div.ssblock2:focus {
+    transform: scale(1.5);
+    outline: none;
+   padding-right: 33%;
+}
+.ssblock3 {
+    border: 2px solid #3d1659;
+    width: 33.3%;
+    height: 300px;
+    transition-duration: 250ms;
+    margin:30px;
+    background-color: #f8fbff;
+}
+div.ssblock3:focus {
+    transform: scale(1.5) translate(-55%);
+    outline: none;
+   padding-right: 33%;
+}
+.ssblock4 {
+    border: 2px solid #3d1659;
+    width: 33.3%;
+    height: 300px;
+    transition-duration: 250ms;
+    margin:30px;
+    background-color: #f8fbff;
+}
+div.ssblock4:focus {
+    transform: scale(1.5) translate(55%);
+    outline: none;
+   padding-right: 33%;
+}
+.ssblock5 {
+    border: 2px solid #3d1659;
+    width: 33.3%;
+    height: 300px;
+    transition-duration: 250ms;
+    margin:30px;
+    background-color: #f8fbff;
+}
+div.ssblock5:focus {
+    transform: scale(1.5);
+    outline: none;
+   padding-right: 33%;
+}
+.ssblock6 {
+    border: 2px solid #3d1659;
+    width: 33.3%;
+    height: 300px;
+    transition-duration: 250ms;
+    margin:30px;
+    background-color: #f8fbff;
+}
+div.ssblock6:focus {
+    transform: scale(1.5) translate(-55%);
+    outline: none;
+   padding-right: 33%;
+}
+.ssblock7 {
+    border: 2px solid #3d1659;
+    width: 33.3%;
+    height: 300px;
+    transition-duration: 250ms;
+    margin:30px;
+    background-color: #f8fbff;
+}
+div.ssblock7:focus {
+    transform: scale(1.5) translate(55%);
+    outline: none;
+   padding-right: 33%;
+}
+.ssblock8 {
+    border: 2px solid #3d1659;
+    width: 33.3%;
+    height: 300px;
+    transition-duration: 250ms;
+    margin:30px;
+    background-color: #f8fbff;
+}
+div.ssblock8:focus {
+    transform: scale(1.5);
+    outline: none;
+   padding-right: 33%;
+}
+.ssblock9 {
+    border: 2px solid #3d1659;
+    width: 33.3%;
+    height: 300px;
+    transition-duration: 250ms;
+    margin:30px;
+    background-color: #f8fbff;
+}
+div.ssblock9:focus {
+    transform: scale(1.5) translate(-55%);
+    outline: none;
+   padding-right: 33%;
+   cursor: pointer;
+}
+.sstop div {
+    cursor: pointer;
+}
+.ssbottom div {
+    cursor: pointer;
+}
+.sscenter div {
+    cursor: pointer;
+}
+
