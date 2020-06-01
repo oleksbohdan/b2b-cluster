@@ -1,0 +1,34 @@
+.generalfooter {
+    width: 100%;
+    background-color: #f8fbff;
+}
+.titlefooter {
+    color:#3d1659;
+    font-family: FuturaPt-Bold;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.ssgeneralinfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.info1 {
+    display: block;
+    color:#3d1659;
+    font-family: FuturaPt-Bold;
+    font-size: 20px;
+    margin-left: 20%;
+    padding-top: 50px;
+}
+.info2 {
+    display: block;
+    color:#3d1659;
+    font-family: FuturaPt-Bold;
+    font-size: 20px;
+    margin-right: 20%;
+    padding-top: 50px;
+}
+.titlefooter {
+    text-align: center;
+}
