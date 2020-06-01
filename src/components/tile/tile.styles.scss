@@ -1,0 +1,28 @@
+.tile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 380px;
+  min-width: 320px;
+  height: 480px;
+  margin: 10px 10px;
+  border: 12px ridge #882cc5;
+  flex: 1 1 0;
+  border-radius: 35px;
+  transition: 300ms ease-in-out all;
+
+  .title{
+    width: 70%;
+    text-align: center;
+    color: #642292;
+    font-size: 25px;
+    font-style: italic;
+  }
+
+  &:hover{
+    transform: scale(1.05);
+    transition: 300ms ease all;
+    overflow: hidden;
+    border-color: rgba(170, 50, 220, .6);
+  }
+}
