@@ -5,6 +5,7 @@ import Aboutus from "../../components/aboutus/aboutus.component";
 import NavBar from "../../components/navbar/navbar.component";
 import OurPartners from "../../components/our-partners/our-partners.component";
 import Decision from "../../components/decision/decision.component";
+import Footer from "../../components/footer/footer.component";
 
 const Homepage = () => (
     <>
@@ -17,6 +18,7 @@ const Homepage = () => (
         <OurPartners partnersTitle='Наші партнери'/>
         <Aboutus />
         <Decision />
+        <Footer />
     </div>
     </>
 );

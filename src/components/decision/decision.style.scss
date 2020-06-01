@@ -13,6 +13,7 @@
     padding-top: 20px;
     width: 60%;
     margin-left: 20%;
+
 }
 .sstop {
     display: flex;
@@ -141,6 +142,16 @@ div.ssblock9:focus {
     outline: none;
    padding-right: 33%;
    cursor: pointer;
+   .sssecondbtn {
+       display: none;
+   }
+}
+   
+
+.ssblock1:not(:focus) .sssecondbtn {
+    display: none;
+    float: right;
+    position: relative;
 }
 .sstop div {
     cursor: pointer;

@@ -4,9 +4,9 @@ import './second.style.scss';
 class Ssexit extends React.Component {
     render() {
         return(
-            < div className="ssscbtn">
+            
                 <button className="sssecondbtn">x</button>
-           </div>
+           
         )
     }
 }

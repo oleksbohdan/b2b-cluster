@@ -15,7 +15,7 @@ class Decision extends React.Component {
                     />
                 </div>
                 <div className="sstop">
-                    <div className="ssblock1" tabindex="1"><div className="sssecbtn"><Ssexit /></div> </div>
+                    <div className="ssblock1" tabindex="1"><Ssexit /> </div>
                     <div className="ssblock2" tabindex="1"></div>
                     <div className="ssblock3" tabindex="1"></div>
                 </div>
