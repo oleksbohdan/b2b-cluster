@@ -1,6 +1,6 @@
 import React from "react";
-const Textbtn = ({text2}) => (
-    <div>{text2}</div>
+const Textbtn = ({text}) => (
+    <div>{text}</div>
 )
 export default Textbtn;
 

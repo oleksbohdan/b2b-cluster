@@ -14,28 +14,11 @@ const Homepage = () => (
     <>
     <NavBar/>
     <div className='homepage'>
-        <Business 
-            content='Шукаєш рішення для покращення бізнесу?' 
-            content1='Зареєструйся на безкоштовну консультацію'
+        <Business
         />
-        <OurPartners partnersTitle='Наші партнери'/>
+        <OurPartners/>
         <Aboutus />
-        <BusinessConsulting
-            title='Бізнес консультування для'
-            tiles={
-                [
-                    {tileTitle: 'Власників бізнесу'},
-                    {tileTitle: 'ТОП-менеджерів та управлінців'},
-                    {tileTitle: 'Людей, які на початку кар\'єрного шляху'},
-                    {tileTitle: 'Тренерів'},
-                    {tileTitle: 'Коучерів'},
-                    {tileTitle: 'Менторів'},
-                    {tileTitle: 'Бажаючих відкрити власну справу'},
-                    {tileTitle: 'Приватних підприємців'},
-                    {tileTitle: 'Залишити заявку'},
-                ]
-            }
-        />
+        <BusinessConsulting/>
         <Decision />
         <Form/>
         <Footer />

@@ -7,17 +7,27 @@ import Instagram from '../../assets/instagram.svg'
 import Facebook from '../../assets/facebook.svg';
 import LinkedIn from '../../assets/linkedin.svg';
 import Switcher from "../switcher/switcher.component";
+import {connect} from 'react-redux';
 
-const NavBar = () => (
+const NavBar = ({schema}) => {
+    const {navBar} = schema;
+    return(
     <div className='bo-navbar-container'>
         <div className="bo-navbar">
             <Logo/>
             <div className="bo-buttons">
-                <NavButton label="Головна" href='#'/>
-                <NavButton label="Про Нас" href='#'/>
-                <NavButton label="Рішення для бізнесу" href='#'/>
-                <NavButton label="Реєстрація" href='#'/>
-                <NavButton label="Курси програмування" href='#'/>
+                {
+                    navBar.options && navBar.options.length ?
+                        navBar.options.map(({text, link}, index) => (
+                            <NavButton
+                                label={text}
+                                href={link}
+                                key={index}
+                            />
+                        ))
+                        : null
+                }
+
             </div>
             <div className="bo-socials-container">
                 <Social url={Instagram} href='#'/>
@@ -28,5 +38,10 @@ const NavBar = () => (
         </div>
     </div>
 );
+};
 
-export default NavBar;
+const mapStateToProps = ({schema})=>({
+    schema
+});
+
+export default connect(mapStateToProps, null)(NavBar);

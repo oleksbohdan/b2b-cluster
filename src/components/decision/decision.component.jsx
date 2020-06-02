@@ -3,15 +3,18 @@ import './decision.style.scss';
 import Textdec from "./decision.props";
 import Ssexit from "../secondbtn/secondbtn";
 import Registration from "../Button/button.component";
+import {connect} from "react-redux";
 class Decision extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
+        const {content, title} = this.props.businessDecisions;
         return (
             <div>
                 <div>
-                    <Textdec titledec="Рішення для бізнесу" />
-                    <Textdec titledec1="ІТ Кластер Академія - чудовий приклад командної роботи керівників та засновників Івано-Франківських ІТ компаній! 
-                        Це багаторічний досвід який приносить результат. Ми готові поділитися ним та допомогти українському бізнесу зростати.
-                        Виберіть для себе програму та реєстр" 
+                    <Textdec titledec={title} />
+                    <Textdec titledec1={content}
                     />
                 </div>
                 <div className="sstop">
@@ -33,4 +36,8 @@ class Decision extends React.Component {
         )
     }
 }
-export default Decision;
+
+const mapStateToProps = ({schema: {businessDecisions}}) => ({
+    businessDecisions
+});
+export default connect(mapStateToProps, null)(Decision);
