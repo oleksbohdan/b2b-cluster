@@ -1,6 +1,7 @@
 import React from "react";
 import './form.styles.scss';
 import Input from "../input/input.component";
+import {connect} from "react-redux";
 
 
 
@@ -25,44 +26,45 @@ class Form extends React.Component{
     };
 
     render() {
+        const {title, fields, submit} = this.props.form;
         return (
             <div className="bo-form-container">
                 <h3 className="title">
-                    Покращуй свій бізнес вже сьогодні!
+                    {title}
                 </h3>
                 <div className="bo-form">
                     <form className='bo-input-form' action="">
                         <Input
                             required
-                            label='Ім’я'
+                            label={fields[0].label}
                             name='name'
                             value={this.state.name}
                             onChange={this.handleChange}
                         />
                         <Input
                             required
-                            label='Прізвище'
+                            label={fields[1].label}
                             name='secondName'
                             value={this.state.secondName}
                             onChange={this.handleChange}
                         />
                         <Input
                             required
-                            label='Назва компанії'
+                            label={fields[2].label}
                             name='company'
                             value={this.state.company}
                             onChange={this.handleChange}
                         />
                         <Input
                             required
-                            label='Посада'
+                            label={fields[3].label}
                             name='position'
                             value={this.state.position}
                             onChange={this.handleChange}
                         />
                         <Input
                             required
-                            label='Сайт'
+                            label={fields[4].label}
                             name='site'
                             value={this.state.site}
                             onChange={this.handleChange}
@@ -70,7 +72,7 @@ class Form extends React.Component{
                         <Input
                             required
                             name='contactNumber'
-                            label='Контактний номер'
+                            label={fields[5].label}
                             value={this.state.contactNumber}
                             onChange={this.handleChange}
                         />
@@ -78,22 +80,27 @@ class Form extends React.Component{
                             required
                             type='email'
                             name='email'
-                            label='Електронна скринька'
+                            label={fields[6].label}
                             value={this.state.email}
                             onChange={this.handleChange}
                         />
                         <Input
                             required
-                            label='Місто'
+                            label={fields[7].label}
                             name='city'
                             value={this.state.city}
                             onChange={this.handleChange}
                         />
-                        <button className='submit-button' type='submit'>Надіслати</button>
+                        <button className='submit-button' type='submit'>{submit}</button>
                     </form>
                 </div>
             </div>
         );
     }
 };
-export default Form;
+
+const mapStateToProps = ({schema:{form}}) => ({
+    form
+});
+
+export default connect(mapStateToProps, null)(Form);

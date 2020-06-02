@@ -1,22 +1,29 @@
 import React from "react";
 import './business-consulting.styles.scss';
 import Tile from "../tile/tile.component";
+import {connect} from "react-redux";
 
-const BusinessConsulting = ({title, tiles}) => (
+const BusinessConsulting = ({schema}) =>{
+    const {businessConsulting} = schema;
+    return(
     <div className="business-consulting">
-        <h1 className='business-consulting-title'>{title}</h1>
+        <h1 className='business-consulting-title'>{businessConsulting.title}</h1>
         <div className="tiles-container">
             {
-                tiles && tiles.length
-                    ?tiles.map((options) => (
+                businessConsulting.tiles && businessConsulting.tiles.length
+                    ?businessConsulting.tiles.map(({tileTitle}) => (
                         <Tile
-                            key={options.tileTitle}
-                            {...options}
+                            key={tileTitle}
+                            tileTitle={tileTitle}
                         />
                     ))
                     :null
             }
         </div>
     </div>
-);
-export default BusinessConsulting;
+)};
+
+const mapStateToProps = ({schema}) => ({
+   schema
+});
+export default connect(mapStateToProps, null)(BusinessConsulting);
