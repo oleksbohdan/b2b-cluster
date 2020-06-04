@@ -4,16 +4,19 @@
     font-size: 40px;
     text-align: center;
     font-weight: bolder;
+    margin-top: 30px;
 }
 .ssdec1 {
     color:#3d1659;
     font-family: FuturaPt-Bold;
     font-size: 20px;
     text-align: center;
-    padding-top: 20px;
     width: 60%;
     margin-left: 20%;
 
+}
+.ssdecision {
+    padding-top: 100px;
 }
 .sstop {
     display: flex;
@@ -26,132 +29,131 @@
     display: flex;
 }
 .ssblock1 {
-    border: 2px solid #3d1659;
+    padding-top: 100px;
     width: 33.3%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
     background-color: #f8fbff;
+    border: 3px solid;
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #3d1659 20px, #3d1659 30px,transparent 30px, transparent 40px);
 }
-div.ssblock1:focus {
-    transform: scale(1.5) translate(55%);
-    outline: none;
-   padding-right: 33%;
+div.ssblock1:hover {
+    transform: scale(1.05);
+    transition: 300ms ease all;
 }
 .ssblock2 {
-    border: 2px solid #3d1659;
+    padding-top: 100px;
     width: 33.3%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
     background-color: #f8fbff;
+    border: 3px solid;
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #3d1659 20px, #3d1659 30px,transparent 30px, transparent 40px);
 }
-div.ssblock2:focus {
-    transform: scale(1.5);
-    outline: none;
-   padding-right: 33%;
+div.ssblock2:hover {
+    transform: scale(1.05);
+    transition: 300ms ease all;
 }
 .ssblock3 {
-    border: 2px solid #3d1659;
+    padding-top: 100px;
     width: 33.3%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
     background-color: #f8fbff;
+    border: 3px solid;
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #3d1659 20px, #3d1659 30px,transparent 30px, transparent 40px);
 }
-div.ssblock3:focus {
-    transform: scale(1.5) translate(-55%);
-    outline: none;
-   padding-right: 33%;
+div.ssblock3:hover {
+    transform: scale(1.05);
+    transition: 300ms ease all;
 }
 .ssblock4 {
-    border: 2px solid #3d1659;
+    padding-top: 100px;
     width: 33.3%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
     background-color: #f8fbff;
+    border: 3px solid;
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #3d1659 20px, #3d1659 30px,transparent 30px, transparent 40px);
 }
-div.ssblock4:focus {
-    transform: scale(1.5) translate(55%);
-    outline: none;
-   padding-right: 33%;
+div.ssblock4:hover {
+    transform: scale(1.05);
+    transition: 300ms ease all;
 }
 .ssblock5 {
-    border: 2px solid #3d1659;
+    padding-top: 100px;
     width: 33.3%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
     background-color: #f8fbff;
+    border: 3px solid;
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #3d1659 20px, #3d1659 30px,transparent 30px, transparent 40px);
 }
-div.ssblock5:focus {
-    transform: scale(1.5);
-    outline: none;
-   padding-right: 33%;
+div.ssblock5:hover {
+    transform: scale(1.05);
+    transition: 300ms ease all;
 }
 .ssblock6 {
-    border: 2px solid #3d1659;
+    padding-top: 100px;
     width: 33.3%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
     background-color: #f8fbff;
+    border: 3px solid;
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #3d1659 20px, #3d1659 30px,transparent 30px, transparent 40px);
 }
-div.ssblock6:focus {
-    transform: scale(1.5) translate(-55%);
-    outline: none;
-   padding-right: 33%;
+div.ssblock6:hover {
+    transform: scale(1.05);
+    transition: 300ms ease all;
 }
 .ssblock7 {
-    border: 2px solid #3d1659;
+    padding-top: 100px;
     width: 33.3%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
     background-color: #f8fbff;
+    border: 3px solid;
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #3d1659 20px, #3d1659 30px,transparent 30px, transparent 40px);
 }
-div.ssblock7:focus {
-    transform: scale(1.5) translate(55%);
-    outline: none;
-   padding-right: 33%;
+div.ssblock7:hover {
+    transform: scale(1.05);
+    transition: 300ms ease all;
 }
 .ssblock8 {
-    border: 2px solid #3d1659;
     width: 33.3%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
     background-color: #f8fbff;
+    border: 3px solid;
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #3d1659 20px, #3d1659 30px,transparent 30px, transparent 40px);
+    padding-top: 100px;
 }
-div.ssblock8:focus {
-    transform: scale(1.5);
-    outline: none;
-   padding-right: 33%;
+div.ssblock8:hover {
+    transform: scale(1.05);
+    transition: 300ms ease all;
 }
 .ssblock9 {
-    border: 2px solid #3d1659;
     width: 33.3%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
     background-color: #f8fbff;
+    border: 3px solid;
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #3d1659 20px, #3d1659 30px,transparent 30px, transparent 40px);
+    padding-top: 40px;
 }
-div.ssblock9:focus {
-    transform: scale(1.5) translate(-55%);
-    outline: none;
-   padding-right: 33%;
-   cursor: pointer;
-   .sssecondbtn {
-       display: none;
-   }
-}
-   
+div.ssblock9:hover {
+    transform: scale(1.05);
+    transition: 300ms ease all;
 
-.ssblock1:not(:focus) .sssecondbtn {
-    display: none;
-    float: right;
-    position: relative;
 }
 .sstop div {
     cursor: pointer;
@@ -162,4 +164,21 @@ div.ssblock9:focus {
 .sscenter div {
     cursor: pointer;
 }
-
+.text {
+    font-size: 30px;
+    color:#3d1659;
+    font-family: FuturaPt-Bold;
+    border: none;
+}
+.sstop div {
+    text-align: center;
+    outline: none;
+}
+.sscenter div {
+    text-align: center;
+    outline: none;
+}
+.ssbottom div {
+    text-align: center;
+    outline: none;
+}

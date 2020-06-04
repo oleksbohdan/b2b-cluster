@@ -13,6 +13,7 @@ class Aboutus extends React.Component {
         const {aboutUs} = this.props.schema;
         return(
             <div className="sscontentabout">
+                <a name="aboutus" />
                 <div className="ssaboutus">
                 </div>
                 <div className="sstext3">
