@@ -1,6 +1,6 @@
 .bo-form-container{
-  margin: 30px 0;
-  max-width: 450px;
+  margin: 30px 10px;
+  max-width: 500px;
   min-width: 300px;
   width: 100%;
   height: available;
@@ -8,8 +8,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(100deg, #642292, #8f3899);
-  border-radius: 35px;
+  background: linear-gradient(100deg, rgb(101, 34, 147), rgb(143, 56, 153));
+  border-radius: 30px;
   flex-grow: 1;
 
   .title{
@@ -18,12 +18,14 @@
     color: white;
     font-weight: normal;
     font-size: 18px;
+    max-width: 80%;
+    text-align: center;
   }
 
   .bo-form{
     width: calc(100% - 20px);
     margin: 10px 0;
-    background-color: rgba(255, 255, 255, 0.36);
+    //background-color: rgba(255, 255, 255, 0.36);
     border-radius: 0 0 25px 25px;
     display: flex;
     flex-direction: column;
@@ -41,11 +43,10 @@
         margin: 10px 0;
         border: none;
         background-color: rgba(255, 255, 255, 0.51);
-        padding: 10px;
+        padding: 15px 50px;
         color: #642292;
         font-size: 16px;
         font-weight: bolder;
-        border-radius: 10px;
         outline: none;
         transition: 200ms ease all;
 
