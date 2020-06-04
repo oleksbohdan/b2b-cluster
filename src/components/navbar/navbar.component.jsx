@@ -12,7 +12,7 @@ import {connect} from 'react-redux';
 const NavBar = ({schema}) => {
     const {navBar} = schema;
     return(
-    <div className='bo-navbar-container'>
+    <div className='bo-navbar-container'> 
         <div className="bo-navbar">
             <Logo/>
             <div className="bo-buttons">
@@ -30,9 +30,9 @@ const NavBar = ({schema}) => {
 
             </div>
             <div className="bo-socials-container">
-                <Social url={Instagram} href='#'/>
-                <Social url={Facebook} href='#'/>
-                <Social url={LinkedIn} href='#'/>
+                <Social url={Instagram} href='https://www.instagram.com/itcluster_academy/?hl=ru'/>
+                <Social url={Facebook} href='https://www.facebook.com/itclusteracademy/'/>
+                <Social url={LinkedIn} href='https://ua.linkedin.com/company/it-cluster-academy'/>
             </div>
             <Switcher/>
         </div>

@@ -17,6 +17,7 @@ class Footer extends React.Component {
                 </div>
                 <div className="ssgeneralinfo">
                     <div className="info1">
+                        <div className="footlogo"></div>
                         {
                             contentLeft && contentLeft.length ?
                                 contentLeft.map((line, index) => (

@@ -29,6 +29,7 @@ class Form extends React.Component{
         const {title, fields, submit} = this.props.form;
         return (
             <div className="bo-form-container">
+                <a name="form" />
                 <h3 className="title">
                     {title}
                 </h3>

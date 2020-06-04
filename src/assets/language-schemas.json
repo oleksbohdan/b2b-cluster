@@ -7,23 +7,23 @@
           "options": [
             {
               "text": "Головна",
-              "link": ""
+              "link": "#"
             },
             {
               "text": "Про Нас",
-              "link": ""
+              "link": "#aboutus"
             },
             {
               "text": "Рішення для бізнесу",
-              "link": ""
+              "link": "#decesion"
             },
             {
               "text": "Реєстрація",
-              "link": ""
+              "link": "#form"
             },
             {
               "text": "Курси програмування",
-              "link": ""
+              "link": "https://itca.if.ua/#courses"
             }
           ]
         },
@@ -56,7 +56,16 @@
         },
         "businessDecisions": {
           "title": "Рішення для бізнесу",
-          "content": "ІТ Кластер Академія - чудовий приклад командної роботи керівників та засновників Івано-Франківських ІТ компаній! \nЦе багаторічний досвід який приносить результат. Ми готові поділитися ним та допомогти українському бізнесу зростати.\nВиберіть для себе програму та реєстр\n"
+          "content": "ІТ Кластер Академія - чудовий приклад командної роботи керівників та засновників Івано-Франківських ІТ компаній! \nЦе багаторічний досвід який приносить результат. Ми готові поділитися ним та допомогти українському бізнесу зростати.\nВиберіть для себе програму та реєстр\n",
+          "block": "Антикризовий бізнес",
+          "block1": "Ефективне управління бізнесом",
+          "block2": "Робота з ризиками",
+          "block3": "Стратегічний менеджмент",
+          "block4": "Маркетинг та продажі",
+          "block5": "Економіка та фінанси. Оптимізація",
+          "block6": "Управління проектами в кризових умовах",
+          "block7": "Комунікація та особиста ефективність",
+          "block8": "Робота з ризиками"
         },
         "form": {
           "title": "Покращуй свій бізнес вже сьогодні!",
@@ -95,23 +104,23 @@
           "options": [
             {
               "text": "Main",
-              "link": ""
+              "link": "#"
             },
             {
               "text": "About us",
-              "link": ""
+              "link": "#aboutus"
             },
             {
               "text": "Decisions for business",
-              "link": ""
+              "link": "#decesion"
             },
             {
               "text": "Registration",
-              "link": ""
+              "link": "#form"
             },
             {
               "text": "Programming courses",
-              "link": ""
+              "link": "https://itca.if.ua/#courses"
             }
           ]
         },
@@ -125,52 +134,61 @@
         },
         "aboutUs": {
           "title": "About us",
-          "content": "ІТ Cluster Academy — один з найуспішніших проектів створених Івано-Франківським ІТ кластером в 2016 році. Головною метою академії є забезпечення українських компаній компетентними спеціалістами та розвиток ІТ- індустрії України. Наразі Айті Кластер бере активну участь у допомозі працевлаштування для ветеранів АТО / ООС, влаштуванні спортивних марафонів та підтримці лікарень під час Пандемії COVID-19."
-
+          "content": "ІТ Cluster Academy — one of the most successful projects created by the Ivano-Frankivsk IT cluster in 2016. The main purpose of the academy is to provide Ukrainian companies with competent specialists and the development of the IT industry of Ukraine. Currently, Aiti Cluster is actively involved in employment assistance for ATO / OOS veterans, organizing sports marathons and supporting hospitals during the COVID-19 Pandemic."
+       
         },
         "businessConsulting": {
-          "title":"Бізнес консультування для",
+          "title":"Business consulting for",
           "tiles": [
-            {"tileTitle": "Власників бізнесу"},
-            {"tileTitle": "ТОП-менеджерів та управлінців"},
-            {"tileTitle": "Людей, які на початку кар'єрного шляху"},
-            {"tileTitle": "Тренерів"},
-            {"tileTitle": "Коучерів"},
-            {"tileTitle": "Менторів"},
-            {"tileTitle": "Бажаючих відкрити власну справу"},
-            {"tileTitle": "Приватних підприємців"},
+            {"tileTitle": "Business owners"},
+            {"tileTitle": "TOP managers and managers"},
+            {"tileTitle": "People who are at the beginning of their careers"},
+            {"tileTitle": "Trainers"},
+            {"tileTitle": "Coaches"},
+            {"tileTitle": "Mentors"},
+            {"tileTitle": "Those wishing to open their own business"},
+            {"tileTitle": "Private entrepreneurs"},
             {"tileTitle": "Залишити заявку"}
           ]
         },
         "businessDecisions": {
-          "title": "Рішення для бізнесу",
-          "content": "ІТ Кластер Академія - чудовий приклад командної роботи керівників та засновників Івано-Франківських ІТ компаній! \nЦе багаторічний досвід який приносить результат. Ми готові поділитися ним та допомогти українському бізнесу зростати.\nВиберіть для себе програму та реєстр\n"
+          "title": "Business solutions",
+          "content": "IT Cluster Academy - is a great example of teamwork of managers and founders of Ivano-Frankivsk IT companies! \nIt is a long-term experience that brings results. We are ready to share it and help Ukrainian business grow. \nChoose a program and registry for yourself\n",
+          "block": "Anti-crisis business",
+          "block1": "Effective business management",
+          "block2": "Dealing with risks",
+          "block3": "Strategic management",
+          "block4": "Marketing and sales",
+          "block5": "Economics and finance. Optimization",
+          "block6": "Project management in crisis conditions",
+          "block7": "Communication and personal effectiveness",
+          "block8": "Робота з ризиками"
         },
         "form": {
-          "title": "Покращуй свій бізнес вже сьогодні!",
+          "title": "Improve your business today!",
           "fields": [
-            {"label": "Ім’я"},
-            {"label": "Прізвище"},
-            {"label": "Назва компанії"},
-            {"label": "Посада"},
-            {"label": "Сайт"},
-            {"label": "Контактний номер"},
-            {"label": "Електронна скринька"},
-            {"label": "Місто"}
+            {"label": "Name"},
+            {"label": "Last name"},
+            {"label": "The company name"},
+            {"label": "Post"},
+            {"label": "Website"},
+            {"label": "Contact number"},
+            {"label": "Email"},
+            {"label": "City"}
           ],
-          "submit": "Надіслати"
+          "submit": "Send"
         },
         "footer": {
-          "title": "Зв’язок з нами",
+          "title": "Contact us",
           "contentRight": [
             "IT Cluster Academy online",
-            "Телефон: +38 (063) 674 12 19",
-            "Пошта: recruitacademyit@gmail.com"
+            "Phone number: +38 (063) 674 12 19",
+            "Email: recruitacademyit@gmail.com"
           ],
           "contentLeft": [
             "IT Cluster Academy",
-            "Телефон: +38 (098) 655 45 29",
-            "Пошта: itcaedu.online@gmail.com"
+            "Phone number: +38 (098) 655 45 29",
+            "Email: itcaedu.online@gmail.com"
           ]
         }
       }
