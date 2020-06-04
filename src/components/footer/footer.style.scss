@@ -17,18 +17,29 @@
     display: block;
     color:#3d1659;
     font-family: FuturaPt-Bold;
-    font-size: 20px;
-    margin-left: 20%;
+    font-size: 25px;
+    margin-left: 15%;
     padding-top: 50px;
 }
 .info2 {
+    margin-top: 80px;
     display: block;
     color:#3d1659;
     font-family: FuturaPt-Bold;
-    font-size: 20px;
-    margin-right: 20%;
+    font-size: 25px;
+    margin-right: 15%;
     padding-top: 50px;
 }
 .titlefooter {
+    padding-top: 70px;
     text-align: center;
+}
+.footlogo {
+    background-image: url("../../assets/logo.svg");
+    height: 57px;
+    width: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-color: transparent;
+    margin-bottom: 23px;
 }

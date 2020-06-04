@@ -8,6 +8,7 @@ const Business = ({schema}) => {
     const {improveBusiness} = schema;
     return(
     <div className="sscontent">
+        
         <div className="sscontent1">
             <div className="sstext">
                 {improveBusiness.contentHeader}

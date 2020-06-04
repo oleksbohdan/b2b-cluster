@@ -8,7 +8,7 @@ class Registration extends React.Component {
     }
     render() {
         return (
-            <form className="ssbtn">
+            <form className="ssbtn" method="get" action="#form">
                 <button
                     className="ssfirstbtn"
                 >
