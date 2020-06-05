@@ -1,6 +1,8 @@
+@import "../../assets/styles/colors";
+
 .bo-carousel-container{
   max-width: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: $main-color;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -25,9 +27,11 @@
       outline: none;
       font-weight: bold;
       font-size: 20px;
+      background-color: white;
       background-size: 12px;
       background-position: center;
       background-repeat: no-repeat;
+      box-shadow: 0 0 10px 5px $main-color-focus;
 
       &:nth-of-type(1){
         transform: rotate(180deg);
@@ -53,7 +57,7 @@
       border-radius: 100px;
       flex-shrink: 0;
       margin: calc((100% - 900px)/10);
-      box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 10px 5px $main-color-focus;
 
       &.medium{
         height: 200px;
