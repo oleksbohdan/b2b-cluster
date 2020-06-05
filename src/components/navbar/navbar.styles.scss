@@ -1,3 +1,5 @@
+@import "../../assets/styles/colors";
+
 .bo-navbar-container{
   width: 100%;
   height: 100px;
@@ -7,14 +9,14 @@
   overflow: hidden;
   top: 0;
   z-index: 1;
-  background-color: white;
+  background-color: $main-color;
   box-shadow: 0 10px 15px -15px #111;
 
   .bo-navbar{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    background-color: white;
+    background-color: $main-color;
     height: 100%;
     display: flex;
     align-items: center;

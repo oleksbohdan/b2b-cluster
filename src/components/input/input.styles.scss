@@ -1,10 +1,10 @@
-$sub-color: #ffffff;
-$main-color: #3e1d64;
+@import "../../assets/styles/fonts";
+@import "../../assets/styles/colors";
 
 @mixin shrinkLabel {
   top: -10px;
   color: $main-color;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 @mixin shrinkInput{
@@ -22,14 +22,15 @@ $main-color: #3e1d64;
   .form-input {
     background: none;
     color: $main-color;
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px 10px 5px 5px;
     display: block;
     width: calc(100% - 20px);
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid $sub-color;
+    border-bottom: 1px solid $main-color;
     margin: 10px;
+    font-family: $font-medium;
 
     &:focus {
       outline: none;
@@ -57,8 +58,8 @@ $main-color: #3e1d64;
   }
 
   .form-input-label {
-    color: $sub-color;
-    font-size: 16px;
+    color: $main-color;
+    font-size: 18px;
     font-weight: bolder;
     position: absolute;
     pointer-events: none;
