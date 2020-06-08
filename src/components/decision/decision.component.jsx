@@ -31,7 +31,7 @@ class Decision extends React.Component {
                 <div className="ssbottom">
                     <div className="ssblock7" tabindex="1"><span className="text"><Textdec ssprops1={block6} /></span></div>
                     <div className="ssblock8" tabindex="1"><span className="text"><Textdec ssprops1={block7} /> </span></div>
-                    <div className="ssblock9" tabindex="1" > <span className="text"><Textdec ssprops1={block8} /></span></div>
+                    <div className="ssblock9" tabindex="1"><span className="text"><Textdec ssprops1={block8} /></span></div>
                 </div>
             </div>
         )
