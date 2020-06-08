@@ -12,6 +12,37 @@ class Carousel extends React.Component{
         this.slideRef = React.createRef();
     }
 
+    getPreset = (width) => {
+        const presets = [
+            {
+                min: 940,
+                max: Infinity,
+                baseSlide: 0,
+                displayWidth: 900,
+                numberOf: 5,
+                hidden: 1
+            },
+            {
+                min: 730,
+                max: 939,
+                baseSlide: -100,
+                displayWidth: 700,
+                numberOf: 3,
+                hidden: 2
+            },
+            {
+                min: 0,
+                max: 729,
+                baseSlide: -300,
+                displayWidth: 300,
+                numberOf: 1,
+                hidden: 3
+            }
+        ];
+
+        return presets.filter(({min, max}) => width >= min && width <= max);
+    };
+
     neighbourNodes = () => {
         const {counter} = this.state;
         const {childNodes} = this.slideRef.current;
@@ -41,7 +72,8 @@ class Carousel extends React.Component{
     computeSlideValue = () => {
         const {counter} = this.state;
         const {style, clientWidth,childNodes} = this.slideRef.current;
-        style.transform = `translateX(${((-100 * (counter + 1))  - ((clientWidth - 900)/(5/(counter + 1))))}px)`;
+        const {baseSlide, displayWidth, numberOf, hidden} = this.getPreset(clientWidth)[0];
+        style.transform = `translateX(${((baseSlide -100 * (counter + 1))  - ((clientWidth - displayWidth)/(numberOf/(counter + hidden))))}px)`;
         childNodes[counter + 3].className = 'img-wrapper scaled';
         childNodes[counter + 2].className = 'img-wrapper medium';
         childNodes[counter + 4].className = 'img-wrapper medium';

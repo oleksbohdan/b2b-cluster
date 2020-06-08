@@ -5,7 +5,7 @@
   margin: 30px 10px;
   max-width: 500px;
   min-width: 300px;
-  width: 100%;
+  width: calc(100% - 20px);
   height: available;
   display: flex;
   flex-direction: column;
