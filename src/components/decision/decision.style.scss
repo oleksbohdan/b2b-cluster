@@ -30,11 +30,11 @@
 }
 .ssblock1 {
     padding-top: 100px;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
-    background-image: url('../../assets/04.svg');
+    background-image: url('../../assets/comun.jpg');
     background-position: center;
     background-repeat: no-repeat;
     border: 3px solid;
@@ -49,7 +49,7 @@ div.ssblock1:hover {
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 100px;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -66,7 +66,7 @@ div.ssblock2:hover {
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 100px;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -83,7 +83,7 @@ div.ssblock3:hover {
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 100px;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -100,7 +100,7 @@ div.ssblock4:hover {
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 100px;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -117,7 +117,7 @@ div.ssblock5:hover {
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 100px;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -130,12 +130,12 @@ div.ssblock6:hover {
     transition: 300ms ease all;
 }
 .ssblock7 {
-    background-image: url('../../assets/1.png');
+    background-image: url('../../assets/Hero.svg');
     background-size: 100%;
     background-position: bottom;
     background-repeat: no-repeat;
     padding-top: 100px;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -152,7 +152,7 @@ div.ssblock7:hover {
     background-size: 110%;
     background-position: center;
     background-repeat: no-repeat;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -166,7 +166,7 @@ div.ssblock8:hover {
     transition: 300ms ease all;
 }
 .ssblock9 {
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -250,5 +250,19 @@ div.ssblock9:hover {
         display: block;
         margin-top: 5%;
         margin-left: 5%;
+    }
+}
+@media screen and (max-width:400px) {
+    .sstop div {
+        margin: 0px 0px 10px 0px;
+        width: 100%;
+    }
+    .sscenter div {
+        margin: 0px 0px 10px 0px;
+        width: 100%;
+    }
+    .ssbottom div {
+        margin: 0px 0px 10px 0px;
+        width: 100%;
     }
 }
