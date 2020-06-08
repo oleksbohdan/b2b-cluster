@@ -38,9 +38,22 @@
 @media screen and (max-width: 800px) {
     .sscontentabout {display: block;}
     .ssaboutus {width: 80%;}
-    .sstext3{width: 90%;}
+    .sstext3{width: 100%;}
     .ssaboutIT{
-        width: 100%;
+        margin-left: 10%;
+        width: 80%;
         text-align: center;
+        font-size: 30px;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .ssaboutus {
+        width: 100%;
+        margin: 0;
+        max-height: 250px;
+    }
+    .ssaboutIT {
+        font-size: 20px;
     }
 }

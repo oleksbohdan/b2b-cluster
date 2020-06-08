@@ -30,11 +30,13 @@
 }
 .ssblock1 {
     padding-top: 100px;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
-    background-color: #f8fbff;
+    background-image: url('../../assets/comun.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
     border: 3px solid;
     border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #3d1659 20px, #3d1659 30px,transparent 30px, transparent 40px);
 }
@@ -43,8 +45,11 @@ div.ssblock1:hover {
     transition: 300ms ease all;
 }
 .ssblock2 {
+    background-image: url('../../assets/01.svg');
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: 100px;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -57,8 +62,11 @@ div.ssblock2:hover {
     transition: 300ms ease all;
 }
 .ssblock3 {
+    background-image: url('../../assets/02.svg');
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: 100px;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -71,8 +79,11 @@ div.ssblock3:hover {
     transition: 300ms ease all;
 }
 .ssblock4 {
+    background-image: url('../../assets/03.svg');
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: 100px;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -85,8 +96,11 @@ div.ssblock4:hover {
     transition: 300ms ease all;
 }
 .ssblock5 {
+    background-image: url('../../assets/05.svg');
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: 100px;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -99,8 +113,11 @@ div.ssblock5:hover {
     transition: 300ms ease all;
 }
 .ssblock6 {
+    background-image: url('../../assets/About.svg');
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: 100px;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -113,8 +130,12 @@ div.ssblock6:hover {
     transition: 300ms ease all;
 }
 .ssblock7 {
+    background-image: url('../../assets/Hero.svg');
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
     padding-top: 100px;
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -127,7 +148,11 @@ div.ssblock7:hover {
     transition: 300ms ease all;
 }
 .ssblock8 {
-    width: 33.3%;
+    background-image: url('../../assets/comun.jpg');
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -141,7 +166,7 @@ div.ssblock8:hover {
     transition: 300ms ease all;
 }
 .ssblock9 {
-    width: 33.3%;
+    width: 30%;
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
@@ -149,6 +174,7 @@ div.ssblock8:hover {
     border: 3px solid;
     border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #3d1659 20px, #3d1659 30px,transparent 30px, transparent 40px);
     padding-top: 40px;
+    text-align: center;
 }
 div.ssblock9:hover {
     transform: scale(1.05);
@@ -181,4 +207,67 @@ div.ssblock9:hover {
 .ssbottom div {
     text-align: center;
     outline: none;
+}
+.btn2 {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .sstop {
+        display: block;
+        margin-top: 5%;
+        margin-left: 5%;
+        align-items: center;
+    }
+    .ssblock1 {
+        width: 80%;
+    }
+    .ssblock2 {
+        width: 80%;
+    }
+    .ssblock3 {
+        width: 80%;
+    }
+    .ssblock4 {
+        width: 80%;
+    }
+    .ssblock5 {
+        width: 80%;
+    }
+    .ssblock6 {
+        width: 80%;
+    }
+    .ssblock7 {
+        width: 80%;
+    }
+    .ssblock8 {
+        width: 80%;
+    }
+    .ssblock9 {
+        width: 80%;
+    }
+    .sscenter {
+        display: block;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .ssbottom {
+        display: block;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width:400px) {
+    .sstop div {
+        margin: 0px 0px 10px 0px;
+        width: 100%;
+    }
+    .sscenter div {
+        margin: 0px 0px 10px 0px;
+        width: 100%;
+    }
+    .ssbottom div {
+        margin: 0px 0px 10px 0px;
+        width: 100%;
+    }
 }
