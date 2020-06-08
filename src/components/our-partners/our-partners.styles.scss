@@ -1,3 +1,6 @@
+@import "../../assets/styles/fonts";
+@import "../../assets/styles/colors";
+
 .bo-partners-section{
   display: flex;
   flex-direction: column;
@@ -5,8 +8,8 @@
   width: 100%;
 
   .bo-partners-title{
-    font-weight: normal;
-    color: rebeccapurple;
+    font-family: $font-medium;
+    color: $font-color;
     margin: 30px 0;
   }
 

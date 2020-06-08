@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'FuturaPT';
+  src: url("../../assets/fonts/FuturaPT-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'FuturaPT-Book';
+  src: url("../../assets/fonts/FuturaPT-Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'FuturaPT-Medium';
+  src: url("../../assets/fonts/FuturaPT-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'FuturaPT-Bold';
+  src: url("../../assets/fonts/FuturaPT-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'FuturaPT-Heavy';
+  src: url("../../assets/fonts/FuturaPT-Heavy.ttf") format("truetype");
+}
+
+$font-light: 'FuturaPT', sans-serif;
+$font-book: 'FuturaPT-Book', sans-serif;
+$font-medium: 'FuturaPT-Medium', sans-serif;
+$font-bold: 'FuturaPT-Bold', sans-serif;
+$font-heavy: 'FuturaPT-Heavy', sans-serif;

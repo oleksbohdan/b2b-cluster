@@ -1,4 +1,4 @@
-import React from "react";
+import React, {createRef, useEffect, useRef, useState} from "react";
 import './navbar.styles.scss';
 import Logo from "../logo/logo.component";
 import NavButton from "../nav-button/nav-button.component";
@@ -11,10 +11,42 @@ import {connect} from 'react-redux';
 
 const NavBar = ({schema}) => {
     const {navBar} = schema;
+    const menu = useRef(null);
+
+    const handle = (current) => {
+        current.style.transition = '300ms ease all';
+    };
+
+    const handleOpen = () => {
+      const {current} = menu;
+      handle(current);
+      current.className = 'bo-navbar-container mobile-opened';
+    };
+
+    const handleClose = () => {
+        const {current} = menu;
+        handle(current);
+        current.className = 'bo-navbar-container mobile-closed';
+    };
+
+    useEffect(() => {
+        const {current} = menu;
+        current.addEventListener('transitionend', () => {
+            current.style.transition = 'none';
+        })
+    });
+
     return(
-    <div className='bo-navbar-container'> 
+    <>
+        <div className="open-menu" onClick={handleOpen} >
+            <span/>
+            <span/>
+            <span/>
+        </div>
+    <div className='bo-navbar-container mobile-closed' ref={menu}>
         <div className="bo-navbar">
             <Logo/>
+            <button className='close' onClick={handleClose}>❌</button>
             <div className="bo-buttons">
                 {
                     navBar.options && navBar.options.length ?
@@ -37,6 +69,7 @@ const NavBar = ({schema}) => {
             <Switcher/>
         </div>
     </div>
+    </>
 );
 };
 
