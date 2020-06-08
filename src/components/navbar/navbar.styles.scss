@@ -1,38 +1,152 @@
 @import "../../assets/styles/colors";
-
-.bo-navbar-container{
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  z-index: 1;
-  background-color: $main-color;
-  box-shadow: 0 10px 15px -15px #111;
-
-  .bo-navbar{
-    max-width: 1200px;
+@media screen and (min-width: 1110px){
+  .open-menu{
+    display: none;
+  }
+  .bo-navbar-container{
     width: 100%;
-    margin: 0 auto;
-    background-color: $main-color;
-    height: 100%;
+    height: 100px;
     display: flex;
-    align-items: center;
-    padding: 0 20px;
+    justify-content: center;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+    background-color: $main-color;
+    box-shadow: 0 10px 15px -15px #111;
 
-    .bo-buttons{
-      display: flex;
-      height: 100%;
-      margin-left: auto;
+    .close{
+      display: none;
     }
 
-    .bo-socials-container{
+    .bo-navbar{
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      background-color: $main-color;
       height: 100%;
       display: flex;
       align-items: center;
-      margin-left: auto;
+      padding: 0 20px;
+
+      .bo-buttons{
+        display: flex;
+        height: 100%;
+        margin-left: auto;
+      }
+
+      .bo-socials-container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1109px){
+
+  .homepage{
+    margin-top: 0;
+  }
+
+  .open-menu{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    background-color: $font-color;
+    left: calc(100% - 90px);
+    z-index: 25;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span{
+      margin: 2px;
+      width: 50%;
+      border: 1px solid white;
+    }
+  }
+
+  .bo-navbar-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 50;
+    background-color: rgba(248, 251, 255, 0.61);
+
+    &.mobile-closed{
+      transform: translateX(100vw);
+    }
+
+    .bo-navbar{
+      min-width: 270px;
+
+      margin: 0 0;
+      background-color: $main-color;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: -1px 0px 15px 1px #aaaaaa;
+      overflow-y: scroll;
+
+      .close{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        line-height: 25px;
+        text-align: center;
+        border: 2px solid $font-color;
+        background-color: white;
+        border-radius: 30px;
+        color: $font-color;
+        align-self: flex-end;
+        outline: none;
+        z-index: 50;
+      }
+
+      .bo-logo{
+        align-self: flex-start;
+        order: 1;
+        min-height: 57px;
+      }
+
+      .bo-buttons{
+        display: flex;
+        flex-direction: column;
+        order: 3;
+
+        & a{
+          padding-top: 0;
+        }
+      }
+
+      .bo-socials-container{
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        align-self: center;
+        order: 4;
+      }
+
+      .switcher{
+        min-height: 40px;
+        order: 2;
+        align-self: flex-end;
+        overflow: initial;
+      }
     }
   }
 }

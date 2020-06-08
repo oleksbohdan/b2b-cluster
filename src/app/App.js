@@ -7,7 +7,7 @@ import Homepage from "../pages/homepage/homepage.component";
 function App() {
   return (
       <Provider store={store}>
-        <Homepage/>
+          <Homepage/>
       </Provider>
   );
 }
