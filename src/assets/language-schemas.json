@@ -65,7 +65,8 @@
           "block5": "Економіка та фінанси. Оптимізація",
           "block6": "Управління проектами в кризових умовах",
           "block7": "Комунікація та особиста ефективність",
-          "block8": "Заповнити форму реєстрації"
+          "block8": "Заповнити форму реєстрації",
+          "textbtn":"Зареєструватися"
         },
         "form": {
           "title": "Покращуй свій бізнес вже сьогодні!",
@@ -162,7 +163,8 @@
           "block5": "Economics and finance. Optimization",
           "block6": "Project management in crisis conditions",
           "block7": "Communication and personal effectiveness",
-          "block8": "Fill in the registration form"
+          "block8": "Fill in the registration form",
+          "textbtn":"Sign up"
         },
         "form": {
           "title": "Improve your business today!",

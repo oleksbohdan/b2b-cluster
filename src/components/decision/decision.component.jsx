@@ -6,10 +6,9 @@ import {connect} from "react-redux";
 class Decision extends React.Component {
     constructor(props) {
         super(props);
-        
     }
     render() {
-        const {content, title, block, block1, block2, block3, block4, block5, block6 ,block7, block8, } = this.props.businessDecisions;
+        const {content, title, block, block1, block2, block3, block4, block5, block6 ,block7, block8, textbtn } = this.props.businessDecisions;
         return (
             <div>
                 <a name="decesion" />
@@ -31,7 +30,16 @@ class Decision extends React.Component {
                 <div className="ssbottom">
                     <div className="ssblock7" tabindex="1"><span className="text"><Textdec ssprops1={block6} /></span></div>
                     <div className="ssblock8" tabindex="1"><span className="text"><Textdec ssprops1={block7} /> </span></div>
-                    <div className="ssblock9" tabindex="1"><span className="text"><Textdec ssprops1={block8} /></span></div>
+                    <div className="ssblock9" tabindex="1">
+                        <span className="text">
+                            <Textdec ssprops1={block8} />
+                        </span>
+                        <div className="btn2">
+                            <span>
+                                <Registration innerText={textbtn} />
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
@@ -40,5 +48,6 @@ class Decision extends React.Component {
 
 const mapStateToProps = ({schema: {businessDecisions}}) => ({
     businessDecisions
+    
 });
 export default connect(mapStateToProps, null)(Decision);
