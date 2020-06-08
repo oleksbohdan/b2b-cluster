@@ -12,6 +12,7 @@ class Carousel extends React.Component{
         this.slideRef = React.createRef();
     }
 
+
     getPreset = (width) => {
         const presets = [
             {
@@ -72,8 +73,10 @@ class Carousel extends React.Component{
     computeSlideValue = () => {
         const {counter} = this.state;
         const {style, clientWidth,childNodes} = this.slideRef.current;
+
         const {baseSlide, displayWidth, numberOf, hidden} = this.getPreset(clientWidth)[0];
         style.transform = `translateX(${((baseSlide -100 * (counter + 1))  - ((clientWidth - displayWidth)/(numberOf/(counter + hidden))))}px)`;
+      
         childNodes[counter + 3].className = 'img-wrapper scaled';
         childNodes[counter + 2].className = 'img-wrapper medium';
         childNodes[counter + 4].className = 'img-wrapper medium';
