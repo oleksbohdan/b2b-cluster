@@ -1,20 +1,24 @@
+@import "../../assets/styles/colors";
+@import "../../assets/styles/fonts";
+
 .bo-nav-button{
   display: block;
   width: auto;
   text-align: center;
   line-height: 65px;
   text-decoration: none;
-  color: rebeccapurple;
+  color: $font-color;
+  background-color: $main-color;
   transition: 400ms ease all;
   padding: 0 10px;
-  font-size: 18px;
-  font-weight: bolder;
+  font-size: 20px;
+  font-family: $font-medium;
   letter-spacing: 0.03em;
   padding-top: 15px;
 }
 
 .bo-nav-button:hover{
-  color: rgba(102, 51, 153, 0.6);
-  border-bottom: 2px double rebeccapurple;
+  color: $font-color-semitransparent;
+  border-bottom: 2px solid $font-color-semi-bright;
   letter-spacing: 0.03em;
 }

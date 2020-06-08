@@ -1,9 +1,11 @@
+@import "../../assets/styles/colors";
+
 .bo-social-image-container{
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 3px;
   border-radius: 25px;
-  background-color: rebeccapurple;
+  background-color: $font-color;
   display: flex;
   justify-content: center;
   align-items: center;

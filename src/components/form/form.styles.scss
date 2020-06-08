@@ -1,23 +1,31 @@
+@import "../../assets/styles/fonts";
+@import "../../assets/styles/colors";
+
 .bo-form-container{
   margin: 30px 10px;
   max-width: 500px;
   min-width: 300px;
-  width: 100%;
+  width: calc(100% - 20px);
   height: available;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(100deg, rgb(101, 34, 147), rgb(143, 56, 153));
-  border-radius: 30px;
+
+  background: linear-gradient(130deg, $font-color, $font-color-semitransparent);
+  border-radius: 50px;
+
   flex-grow: 1;
+  font-family: $font-medium;
 
   .title{
     margin-top: 20px;
     margin-bottom: 10px;
-    color: white;
+    color: $main-color;
     font-weight: normal;
-    font-size: 18px;
+    
+    font-size: 24px;
+
     max-width: 80%;
     text-align: center;
   }
@@ -44,9 +52,12 @@
         border: none;
         background-color: rgba(255, 255, 255, 0.51);
         padding: 15px 50px;
-        color: #642292;
-        font-size: 16px;
-        font-weight: bolder;
+
+        color: $font-color;
+        font-size: 18px;
+        font-family: $font-bold;
+        text-transform: uppercase;
+
         outline: none;
         transition: 200ms ease all;
 
