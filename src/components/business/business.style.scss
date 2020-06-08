@@ -1,6 +1,6 @@
 .sscontent {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 125px;
     display: flex;
     background-color: #f8fbff;
 }
@@ -38,4 +38,45 @@
 @font-face {
     font-family: 'FuturaPT-Bold';
     src: url('/b2b-cluster/src/assets/fonts/FuturaPT-Bold.eot');
+}
+@media screen and (max-height: 768px ) {
+    .sscontent { 
+        margin-bottom: 50px;  
+    }
+    
+}
+@media screen and (min-height: 1024px ) {
+    .sscontent {
+        width: 100%;
+        margin-top: 180px;  
+        margin-bottom: 100px;
+          
+    }
+    .sscontent1 {
+        width: 100%;
+        margin: 0;
+    }
+    .ssexamp {
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 800px ) {
+    .sscontent1 {
+        width: 80%;
+        margin-bottom: 100px;
+    }
+    .sscontent {
+        display: block;
+    }
+    .sstext {
+        width: 100%;
+    }
+    .sstext1 {
+        width: 100%;
+    }
+    .ssexamp {
+        width: 80%;
+        margin-left: 10%;
+    }
 }
