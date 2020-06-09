@@ -11,8 +11,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   background: linear-gradient(130deg, $font-color, $font-color-semitransparent);
   border-radius: 50px;
+
   flex-grow: 1;
   font-family: $font-medium;
 
@@ -21,7 +23,9 @@
     margin-bottom: 10px;
     color: $main-color;
     font-weight: normal;
+    
     font-size: 24px;
+
     max-width: 80%;
     text-align: center;
   }
@@ -48,10 +52,12 @@
         border: none;
         background-color: rgba(255, 255, 255, 0.51);
         padding: 15px 50px;
+
         color: $font-color;
         font-size: 18px;
         font-family: $font-bold;
         text-transform: uppercase;
+
         outline: none;
         transition: 200ms ease all;
 
