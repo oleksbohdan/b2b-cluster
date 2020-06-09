@@ -34,7 +34,8 @@
     height: 300px;
     transition-duration: 250ms;
     margin:30px;
-    background-image: url('../../assets/comun.jpg');
+    background-image: url('../../assets/illustrations/9.png');
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border: 3px solid;
@@ -45,7 +46,8 @@ div.ssblock1:hover {
     transition: 300ms ease all;
 }
 .ssblock2 {
-    background-image: url('../../assets/01.svg');
+    background-image: url('../../assets/illustrations/8.png');
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 100px;
@@ -62,7 +64,8 @@ div.ssblock2:hover {
     transition: 300ms ease all;
 }
 .ssblock3 {
-    background-image: url('../../assets/02.svg');
+    background-image: url('../../assets/illustrations/7.png');
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 100px;
@@ -79,8 +82,9 @@ div.ssblock3:hover {
     transition: 300ms ease all;
 }
 .ssblock4 {
-    background-image: url('../../assets/03.svg');
+    background-image: url('../../assets/illustrations/6.png');
     background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
     padding-top: 100px;
     width: 30%;
@@ -96,8 +100,9 @@ div.ssblock4:hover {
     transition: 300ms ease all;
 }
 .ssblock5 {
-    background-image: url('../../assets/05.svg');
+    background-image: url('../../assets/illustrations/5.png');
     background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
     padding-top: 100px;
     width: 30%;
@@ -113,8 +118,9 @@ div.ssblock5:hover {
     transition: 300ms ease all;
 }
 .ssblock6 {
-    background-image: url('../../assets/About.svg');
+    background-image: url('../../assets/illustrations/4.png');
     background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
     padding-top: 100px;
     width: 30%;
@@ -130,9 +136,9 @@ div.ssblock6:hover {
     transition: 300ms ease all;
 }
 .ssblock7 {
-    background-image: url('../../assets/Hero.svg');
+    background-image: url('../../assets/illustrations/3.png');
     background-size: 100%;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     padding-top: 100px;
     width: 30%;
@@ -148,8 +154,8 @@ div.ssblock7:hover {
     transition: 300ms ease all;
 }
 .ssblock8 {
-    background-image: url('../../assets/comun.jpg');
-    background-size: 110%;
+    background-image: url('../../assets/illustrations/2.png');
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     width: 30%;
