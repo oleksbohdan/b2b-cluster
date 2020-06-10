@@ -3,6 +3,7 @@ import './decision.style.scss';
 import Textdec from "./decision.props";
 import Registration from "../Button/button.component";
 import {connect} from "react-redux";
+
 class Decision extends React.Component {
     constructor(props) {
         super(props);
@@ -35,9 +36,7 @@ class Decision extends React.Component {
                             <Textdec ssprops1={block8} />
                         </span>
                         <div className="btn2">
-                            <span>
                                 <Registration innerText={textbtn} />
-                            </span>
                         </div>
                     </div>
                 </div>

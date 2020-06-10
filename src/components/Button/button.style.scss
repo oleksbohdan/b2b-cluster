@@ -24,7 +24,21 @@
     font-family: 'FuturaPT-Bold';
     src: url('/b2b-cluster/src/assets/fonts/FuturaPT-Bold.eot');
 }
-@media screen and (max-width: 800px ) {
+@media screen and (max-width: 1300px ) {
+    .ssbtn {
+        margin: 0;
+        text-align:center;
+    }
+    .ssfirstbtn {
+        margin-top: 50px;
+        width: 240px;
+        height: 50px;
+    }
+    .sstextbtn {
+        font-size: 23px;
+    }
+}
+@media screen and (max-width: 900px ) {
     .ssbtn {
         margin: 0;
         text-align:center;
