@@ -17,12 +17,42 @@ class Form extends React.Component{
             contactNumber:'',
             email: '',
             city: ''
-        }
+        };
+        this.regex = new RegExp('[\\+\\-\\d]')
+
     }
+
+    handleNumberChange = e => {
+        const {value} = e.target;
+        if(value.length){
+            if(value.match(this.regex)){
+                this.handleChange(e);
+                console.log('lul')
+            }
+        }
+        else {
+            this.handleChange(e);
+        }
+    };
 
     handleChange = e => {
         const {value, name} = e.target;
         this.setState({[name]: value});
+    };
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(this.state);
+        this.setState({
+            name: '',
+                secondName: '',
+                company:'',
+                position: '',
+                site: '',
+                contactNumber:'',
+                email: '',
+                city: ''
+        })
     };
 
     render() {
@@ -34,7 +64,7 @@ class Form extends React.Component{
                     {title}
                 </h3>
                 <div className="bo-form">
-                    <form className='bo-input-form' action="">
+                    <form className='bo-input-form' onSubmit={this.handleSubmit}>
                         <Input
                             required
                             label={fields[0].label}
@@ -57,14 +87,12 @@ class Form extends React.Component{
                             onChange={this.handleChange}
                         />
                         <Input
-                            required
                             label={fields[3].label}
                             name='position'
                             value={this.state.position}
                             onChange={this.handleChange}
                         />
                         <Input
-                            required
                             label={fields[4].label}
                             name='site'
                             value={this.state.site}
@@ -75,7 +103,7 @@ class Form extends React.Component{
                             name='contactNumber'
                             label={fields[5].label}
                             value={this.state.contactNumber}
-                            onChange={this.handleChange}
+                            onChange={this.handleNumberChange}
                         />
                         <Input
                             required
