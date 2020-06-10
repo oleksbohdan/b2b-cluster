@@ -7,8 +7,8 @@ import {connect} from "react-redux";
 const Business = ({schema}) => {
     const {improveBusiness} = schema;
     return(
-    <div className="sscontent">
-        
+    <div className="sscontent-container">
+        <div className="sscontent">
         <div className="sscontent1">
             <div className="sstext">
                 {improveBusiness.contentHeader}
@@ -19,6 +19,7 @@ const Business = ({schema}) => {
             <Registration innerText={improveBusiness.register} />
              </div>
         <div className="ssexamp"> 
+        </div>
         </div>
     </div>
 );
