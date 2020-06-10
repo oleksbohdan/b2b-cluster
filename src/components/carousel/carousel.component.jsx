@@ -7,14 +7,11 @@ class Carousel extends React.Component{
         super(props);
         this.state={
             images: this.props.images,
-            counter: 1
+            counter: 1,
+            preset: null,
+            viewWidth: 0
         };
-        this.slideRef = React.createRef();
-    }
-
-
-    getPreset = (width) => {
-        const presets = [
+        this.presets = [
             {
                 min: 940,
                 max: Infinity,
@@ -40,7 +37,12 @@ class Carousel extends React.Component{
                 hidden: 3
             }
         ];
+        this.slideRef = React.createRef();
+    }
 
+
+    getPreset = (width) => {
+        const presets = this.presets;
         return presets.filter(({min, max}) => width >= min && width <= max);
     };
 
@@ -58,9 +60,7 @@ class Carousel extends React.Component{
         this.setState(({counter}) => {
             if(counter === 17) return {};
             return {counter: counter + 1}
-        }, () => {
-            this.computeSlide();
-        });
+        }, this.computeSlide);
     };
 
     prev = () => {
@@ -70,13 +70,12 @@ class Carousel extends React.Component{
         }, this.computeSlide);
     };
 
-    computeSlideValue = () => {
-        const {counter} = this.state;
-        const {style, clientWidth,childNodes} = this.slideRef.current;
-
-        const {baseSlide, displayWidth, numberOf, hidden} = this.getPreset(clientWidth)[0];
-        style.transform = `translateX(${((baseSlide -100 * (counter + 1))  - ((clientWidth - displayWidth)/(numberOf/(counter + hidden))))}px)`;
-      
+    computeSlide = () => {
+        const {counter, preset, viewWidth} = this.state;
+        const {style, childNodes} = this.slideRef.current;
+        const {baseSlide, numberOf, hidden} = preset;
+        const slide = ((baseSlide - 100 * (counter + 1))  - (viewWidth/(numberOf/(counter + hidden))));
+        style.transform = `translateX(${slide}px)`;
         childNodes[counter + 3].className = 'img-wrapper scaled';
         childNodes[counter + 2].className = 'img-wrapper medium';
         childNodes[counter + 4].className = 'img-wrapper medium';
@@ -84,8 +83,16 @@ class Carousel extends React.Component{
         childNodes[counter + 5].className = 'img-wrapper';
     } ;
 
-    computeSlide = () => {
-        this.computeSlideValue();
+    handleResize = () => {
+        const {clientWidth} = this.slideRef.current;
+        const preset = this.getPreset(clientWidth)[0];
+        const viewWidth = clientWidth - preset.displayWidth;
+        if(preset === this.state.preset){
+            this.setState({viewWidth}, this.computeSlide)
+        }
+        else{
+            this.setState({preset, viewWidth }, this.computeSlide);
+        }
     };
 
     componentDidUpdate(prevProps, {counter}, snapshot) {
@@ -97,20 +104,17 @@ class Carousel extends React.Component{
     }
 
     componentDidMount() {
+        this.handleResize();
         this.slideRef.current.style.transition = '400ms ease all';
         const {childNodes} = this.slideRef.current;
         childNodes.forEach(each => each.style.transition = '400ms ease-in-out all');
-        window.addEventListener('resize', this.computeSlide);
+        window.addEventListener('resize', this.handleResize);
         this.slideRef.current.childNodes[21].addEventListener('transitionend', () => {
             if(this.state.counter === 17) {
                 this.setState(({counter}) => {
                     this.clearWhenOvercome(counter);
                     return {counter: 1};
-                }, () => {
-                    this.slideRef.current.style.transition = 'none';
-                    this.neighbourNodes().forEach((each) => each.style.transition = 'none');
-                    this.computeSlideValue();
-                })
+                }, this.clearTransition)
             }
         });
         this.slideRef.current.childNodes[3].addEventListener('transitionend', () => {
@@ -119,14 +123,16 @@ class Carousel extends React.Component{
                     this.clearWhenOvercome(counter);
                     this.neighbourNodes().forEach((each) => each.style.transition = 'none');
                     return {counter: 16};
-                }, () => {
-                    this.slideRef.current.style.transition = 'none';
-                    this.neighbourNodes().forEach((each) => each.style.transition = 'none');
-                    this.computeSlideValue();
-                })
+                }, this.clearTransition)
             }
         })
     }
+
+    clearTransition = () => {
+        this.slideRef.current.style.transition = 'none';
+        this.neighbourNodes().forEach((each) => each.style.transition = 'none');
+        this.computeSlide();
+    };
 
     render() {
         const {images} = this.state;

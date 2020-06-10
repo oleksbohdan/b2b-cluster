@@ -18,6 +18,10 @@
   flex-grow: 1;
   font-family: $font-medium;
 
+  a{
+    transform: translateY(-100px);
+  }
+
   .title{
     margin-top: 20px;
     margin-bottom: 10px;

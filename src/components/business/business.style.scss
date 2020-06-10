@@ -1,10 +1,32 @@
+@media screen and (min-height: 1000px){
+    .sscontent-container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-height: 999px){
+    .sscontent-container{
+        padding-top: 120px;
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
 .sscontent {
     width: 100%;
     display: flex;
     background-color: #f8fbff;
 }
 .sscontent1 {
-    padding-top: 125px;
+    //padding-top: 125px;
     margin-left: 10%;
     width: 50%;
     color: #3d1659;
@@ -33,7 +55,7 @@
     width: 50%;
     margin-right: 10%;
     min-height: 500px;
-    margin-top: 125px;
+    //margin-top: 125px;
 }
 
 @font-face {

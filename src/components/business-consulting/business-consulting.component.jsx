@@ -4,6 +4,10 @@ import Tile from "../tile/tile.component";
 import {connect} from "react-redux";
 import illustrations from "../../assets/illustrations/illustrations.js";
 
+const handleClick = () => {
+    window.location.href='#form'
+};
+
 const BusinessConsulting = ({schema}) =>{
     const {businessConsulting} = schema;
     return(
@@ -17,6 +21,8 @@ const BusinessConsulting = ({schema}) =>{
                             key={tileTitle}
                             tileTitle={tileTitle}
                             tileImg={illustrations[index]}
+                            onClick={index === 8 ? handleClick : null}
+                            className={index === 8 ? 'clickable' : null}
                         />
                     ))
                     :null
