@@ -217,50 +217,78 @@ div.ssblock9:hover {
 .btn2 {
     width: 100%;
 }
-
-@media screen and (max-width: 800px) {
-    .sstop {
-        display: block;
+@media screen and (max-width: 1300px) {
+    .sstop div {
         margin-top: 5%;
         margin-left: 5%;
         align-items: center;
+        margin: 0px 0px 0px 20px;
     }
-    .ssblock1 {
-        width: 80%;
+    .sscenter div {
+        margin-top: 5%;
+        margin-left: 5%;
+        align-items: center;
+        margin: 0px 0px 0px 20px;
     }
-    .ssblock2 {
-        width: 80%;
+    .ssbottom div {
+        margin-top: 5%;
+        margin-left: 5%;
+        align-items: center;
+        margin: 0px 0px 0px 20px;
     }
-    .ssblock3 {
-        width: 80%;
+    .btn2 {
+        width: 90%;
+}
+}
+@media screen and (max-width: 900px) {
+    .sstop {
+        display: block;
+        margin:  0px  0px  0px 15%; 
     }
-    .ssblock4 {
-        width: 80%;
-    }
-    .ssblock5 {
-        width: 80%;
-    }
-    .ssblock6 {
-        width: 80%;
-    }
-    .ssblock7 {
-        width: 80%;
-    }
-    .ssblock8 {
-        width: 80%;
-    }
-    .ssblock9 {
-        width: 80%;
+    .sstop div {
+        margin-bottom: 30px;
     }
     .sscenter {
         display: block;
-        margin-top: 5%;
-        margin-left: 5%;
+        margin-left: 15%;
+    }
+    .sscenter div {
+        margin-bottom: 30px;
     }
     .ssbottom {
         display: block;
-        margin-top: 5%;
-        margin-left: 5%;
+        margin-left: 15%;
+    }
+    .ssbottom div {
+        margin-bottom: 30px;
+    }
+    .ssblock1 {
+        width: 70%;
+
+    }
+    .ssblock2 {
+        width: 70%;
+    }
+    .ssblock3 {
+        width: 70%;
+    }
+    .ssblock4 {
+        width: 70%;
+    }
+    .ssblock5 {
+        width: 70%;
+    }
+    .ssblock6 {
+        width: 70%;
+    }
+    .ssblock7 {
+        width: 70%;
+    }
+    .ssblock8 {
+        width: 70%;
+    }
+    .ssblock9 {
+        width: 70%;
     }
 }
 @media screen and (max-width:400px) {
