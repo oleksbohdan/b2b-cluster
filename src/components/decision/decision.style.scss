@@ -241,67 +241,73 @@ div.ssblock9:hover {
 }
 }
 @media screen and (max-width: 900px) {
-    .sstop {
+    .text {
+        font-size: 30px;
+    }
+    .sstop  {
         display: block;
-        margin:  0px  0px  0px 15%; 
     }
     .sstop div {
-        margin-bottom: 30px;
+        margin: auto;
     }
     .sscenter {
         display: block;
-        margin-left: 15%;
     }
     .sscenter div {
-        margin-bottom: 30px;
+        margin: auto;
     }
     .ssbottom {
         display: block;
-        margin-left: 15%;
     }
     .ssbottom div {
-        margin-bottom: 30px;
+        margin: auto;
     }
+       .btn2 {
+           margin-bottom: 100px;
+       }
     .ssblock1 {
-        width: 70%;
+        width: 90%;
 
     }
     .ssblock2 {
-        width: 70%;
+        width: 90%;
     }
     .ssblock3 {
-        width: 70%;
+        width: 90%;
     }
     .ssblock4 {
-        width: 70%;
+        width: 90%;
     }
     .ssblock5 {
-        width: 70%;
+        width: 90%;
     }
     .ssblock6 {
-        width: 70%;
+        width: 90%;
     }
     .ssblock7 {
-        width: 70%;
+        width: 90%;
     }
     .ssblock8 {
-        width: 70%;
+        width: 90%;
     }
     .ssblock9 {
-        width: 70%;
+        width: 90%;
     }
 }
-@media screen and (max-width:400px) {
+@media screen and (min-width:500px) {
+    .text {
+        font-size: 35 px;
+    }
     .sstop div {
-        margin: 0px 0px 10px 0px;
-        width: 100%;
+        margin: auto;
+        width: 80%;
     }
     .sscenter div {
-        margin: 0px 0px 10px 0px;
-        width: 100%;
+        margin: auto;
+        width: 80%;
     }
     .ssbottom div {
-        margin: 0px 0px 10px 0px;
-        width: 100%;
+        margin: auto;
+        width: 80%;
     }
 }
